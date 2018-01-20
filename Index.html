@@ -10,24 +10,32 @@
     <title>TVote</title>
   </head>
     <div class="container-fluid">
-        <div class="row">
-                <div class="col-3 align-self-start">
-                        <nav class="navbar navbar-light bg-light justify-content-between">
-                                <a class="navbar-brand"></a>
-                                <img src="image\TVote.jpg" style="width: 100px;">
-                                <form class="form-inline">
-                                  <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                                  <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                                </form>
-                              </nav>
-                    </div>
-            <div class="col-8">
+      <div class="row">     
+        <div class="col-sm-3 align-self-start">
+          <nav class="navbar navbar-light bg-light flex-column">
+                  <a class="navbar-brand"></a>
+                  <img src="image\TVote.jpg" style="width: 100px;" class="logo">
+                  <form class="form-inline">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                  </form>
+                  <ul class="nav flex-column">
+                    <li class="nav-item">
+                      <a class="nav-link active" href="#">#trending</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link active" href="#">#most popular</a> 
+                    </li>
+                  </ul>
+                </nav>
+      </div>   
+        <div class="col-8">
                     <div class="jumbotron jumbotron-fluid">
-                    <div class="container">
+                      <div class="container">
                       <h1 class="display-4">Current Poll</h1>
                       <p class="lead"> Julio's Journey: Will he marry Sonya?
                         <div class="row" >
-                        <ul class="text-muted mb-0">Yes, they are a great couple!</ul>
+                          <ul class="text-muted mb-0">Yes, they are a great couple!</ul>
                         </div>
                         <div class="row" >
                           <ul class="text-muted mb-0">No, I want him to marry someone else!</ul>
@@ -38,7 +46,7 @@
             </div>
         </div>
         <div class="row">
-                <div class="col">
+                <div class="col-md-3 offset-md-3">
                         <div class="card" style="width: 18rem;">
                                 <img class="card-img-top" src="image\couple-sunset.jpg" alt="Card image cap" style="width: 100px">
                                 <div class="card-body">
